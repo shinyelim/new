@@ -152,3 +152,39 @@ border-top: 2px solid rgb(255, 213, 23);
   border-radius: 50%;
   
 }
+
+footer{
+background-color: rgb(235, 27, 27);
+padding: 20px 0;
+}
+.global-footer{
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin: 0 auto;
+  color: #fff;
+}
+.global-footer a {
+  color: #fff;
+}
+
+.mac-link-list{
+margin-right: 40px;
+}
+/*flex-grow:flex-grow가 적용되지 않았을경우 
+레이아웃보다 정렬된 아이템들의 width 합이 작으면
+오른쪽에 여백이 남는다. 그 여백을 지정한 비율대로 
+차지하게 할 수 있는 속성이다.*/
+.mac-info-list{
+  
+}
+
+/*.mac-link-item a{
+  color: #fff;
+}*
+.mac-link-item a:hover {
+  color: yellow;
+}*/
+.mac-link-item:first-child a {
+  color: yellow;
+}
