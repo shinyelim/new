@@ -11,6 +11,49 @@
   font-family: 'Poppins', sans-serif;
   font-family: 'Roboto Mono', monospace;
   font-family: 'Sunflower', sans-serif;
+  margin: 0;
+  padding: 0;
   }
+li{
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+.visually-hidden{
+  display: none;
+}
+/*부트스트랩에서 권장하는 그리드 시스템
+sm(Small의약자),md(Medium)768px이상은 미디엄 lg(large) 데스크탑버젼순*/
+.sm-only{
+  display: none;
 
-  
+}
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 95%;
+  margin: 0 auto;
+  padding: 10px 0;
+  background-color: #fff;
+}
+.logo img{
+  width: 70px;
+}  
+.gnb-list{
+  display: flex;
+justify-content: space-between;
+width: 300px;
+
+}
+.gnb-itme a{
+font-size: 16px;
+font-weight: bold;
+transition: color 300ms ease-in-out;
+}
+.gnb-item a:hover{
+  color: darkgray;
+
+}
