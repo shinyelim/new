@@ -132,11 +132,11 @@ border-radius: 10px;
   position: sticky;
   bottom: 0;
   z-index: 10;
-margin-top: 30px;
-padding: 20px 0;
-text-align: center;
-background-color: #fff;
-border-top: 2px solid rgb(255, 213, 23);
+  margin-top: 30px;
+  padding: 20px 10px;
+  text-align: center;
+  background-color: #fff;
+  border-top: 2px solid rgb(255, 213, 23);
 
 }
 .mac-story-list{
@@ -144,6 +144,7 @@ border-top: 2px solid rgb(255, 213, 23);
   justify-content: space-between;
   width: 30%;
   margin: 0 auto;
+  padding: 15px 0;
 }
 .mac-story-item img{
   width: 100px;
@@ -162,13 +163,14 @@ padding: 20px 0;
   justify-content: space-between;
   width: 90%;
   margin: 0 auto;
-  color: #fff;
+  color: #fafafa;
 }
 .global-footer a {
-  color: #fff;
+  color: #fafafa;
 }
 
 .mac-link-list{
+
 margin-right: 40px;
 }
 /*flex-grow:flex-grow가 적용되지 않았을경우 
@@ -187,4 +189,30 @@ margin-right: 40px;
 }*/
 .mac-link-item:first-child a {
   color: yellow;
+}
+.mac-icon-list{
+  display: flex;
+  justify-content: space-between;
+ 
+ 
+  
+}
+
+  
+
+  
+  
+
+.global-footer i{
+  color: red;
+  background-color: #fff;
+  
+  font-size: 22px;
+  border-radius: 50%;
+  padding: 10px 10px;
+  margin: 3px ; 
+  margin-top: 10px;
+}
+@media screen  and (max-width:1200px){
+  
 }
