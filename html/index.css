@@ -120,8 +120,8 @@ border-radius: 10px;
 }
 .food-box-item a:hover{
   opacity: 7;
-}
-.food-box-item a{
+}m a{
+.food-box-ite
   transition: opacity 300ms ease-in-out;
 }
 .food-box-txt{
@@ -212,7 +212,7 @@ margin-right: 40px;
   height: 50px;
   background-color: #fff;
   border-radius: 50%;
- transition: color 500ms ease-in
+ transition: color rgb(235,27,27)  500ms ease;
 }
 .mac-icon-list li:last-child{
   margin: 0;
@@ -231,7 +231,7 @@ margin-right: 40px;
  }
  .mac-icon-list li i:hover{
   color: #fff;
-  transition: color 300ms ease-in-out;
+  transition: color 300ms ease-in;
  }
   
 
@@ -242,20 +242,83 @@ margin-right: 40px;
     .mac-link-item a{
       padding: 5px 0;
     }*/
-    .global-footer i{
-      color: red;
-      background-color: #fff;
-      
-      font-size: 22px;
-      border-radius: 50%;
-      padding: 10px 10px;
-      margin: 3px ; 
-      margin-top: 10px;
+    nav{
+    padding: 5px 0;
+     
     } 
-    
+    .logo{
+      width: 65px;
+    }
+    .gnb-list{
+      width: 250px;
+    }
+    .background{
+      height: 500px;
+    }
+    @media screen and (max-width:1028px)  {
+      
+    }
+      .food-box-item{
+      
+      width: 33%;
   
+      overflow: hidden;
+      
+      
+      
+      }
+      .food-box-item img{
+      width: 100%;
+      height: 150px;
+      
+      
+      }
+      .food-box{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 90%;
+        margin: 80px auto 0 auto ;
+       margin: 80px auto 0 auto;
+      
+      
+      }
+  
+      .food-box-txt{
+      
+        margin: 20px auto;
+  
+      
+      }
+      .mac-story-box{
+       
+        bottom: 0;
+        z-index: 10;
+        margin-top: 50px;
+        padding: 20px 10px;
+        text-align: center;
+        background-color: #fff;
+        border-top: 2px solid rgb(255, 213, 23);
+      
+      }
+      .mac-story-list{
+        
+        width: 40%;
+      
+        padding: 15px 0;
+      }
+      .mac-story-item img{
+        width: 80px;
+        height: 80px;
+      
+        
+      }
+      
+      footer{
+      background-color: rgb(235, 27, 27);
+      padding: 20px 0;
+      }
+      
 
   }
- @media screen and (max-width:1028px) {
-  
- }
+ 
