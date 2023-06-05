@@ -87,6 +87,7 @@ transition: color 300ms ease-in-out;
 }
 .food-box-list{
 display: flex;
+margin-top: 20px;
 
 }
 .food-box-item{
@@ -94,7 +95,8 @@ display: flex;
 width: 300px;
 margin-right: 30px;
 border-radius: 20px;
-box-shadow: 5px 5px 5px rgb(105, 104, 104);
+box-shadow: 3px 3px  rgb(180, 180, 180);
+
 
 
 }
@@ -110,7 +112,7 @@ border-radius: 10px;
   width: 90%;
   margin: 80px auto 0 auto ;
  margin: 80px auto 0 auto;
- border: 3px solid blue;
+
 
 }
 .food-box-item:last-child{
@@ -171,6 +173,7 @@ padding: 20px 0;
 
 .mac-link-list{
 
+
 margin-right: 40px;
 }
 /*flex-grow:flex-grow가 적용되지 않았을경우 
@@ -180,39 +183,75 @@ margin-right: 40px;
 .mac-info-list{
   
 }
+.mac-info-list li{
+  padding: 5px 0;
+}
 
-/*.mac-link-item a{
+.mac-link-item a{
   color: #fff;
-}*
+  padding: 5px 0;
+ display: inline-block;
+}
+/*inline tag에 magin,padding 적용되지 않을때 display속성에서 inline,inline-block으로 잡으면 됨*/
 .mac-link-item a:hover {
   color: yellow;
-}*/
-.mac-link-item:first-child a {
-  color: yellow;
 }
+
 .mac-icon-list{
   display: flex;
-  justify-content: space-between;
+ align-items: center;
+
  
  
   
 }
 
-  
-
-  
-  
-
-.global-footer i{
-  color: red;
+.mac-icon-list li{
+  position: relative;
+  width: 50px;
+  height: 50px;
   background-color: #fff;
-  
-  font-size: 22px;
   border-radius: 50%;
-  padding: 10px 10px;
-  margin: 3px ; 
-  margin-top: 10px;
+
 }
-@media screen  and (max-width:1200px){
+.mac-icon-list li:last-child{
+  margin: 0;
+}
+.mac-icon-list i{
+  position: absolute;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  font-size: 26px;
+  color: rgb(235, 27, 27);
+}
   
-}
+  
+
+  
+  
+
+
+@media screen  and (max-width:1200px){
+  /*.mac-link-item:first-child a {
+    color: yellow;}
+    .mac-link-item a{
+      padding: 5px 0;
+    }*/
+    .global-footer i{
+      color: red;
+      background-color: #fff;
+      
+      font-size: 22px;
+      border-radius: 50%;
+      padding: 10px 10px;
+      margin: 3px ; 
+      margin-top: 10px;
+    } 
+    
+  
+
+  }
+ @media screen and (max-width:1028px) {
+  
+ }
