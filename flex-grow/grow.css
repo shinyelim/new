@@ -57,3 +57,6 @@ text-align: center;
 /*.selector span:nth-child(5){
   background-color: darkred;
 }*/
+.selector span:nth-of-type(2){
+  background-color: darkcyan;
+}
