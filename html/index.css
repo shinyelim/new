@@ -326,6 +326,8 @@ margin-right: 40px;
 
   @media screen and (max-width:768px){
 
+
+
     .sm-only{
       display: block;
     
@@ -401,58 +403,72 @@ margin-right: 40px;
           height: 50px;
          
         }
+        .mac-info-list{
+          text-align: right;
+         }
+         .mac-icon-list{
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          margin-top: 20px;
+    
+         }
+         .sidebar {
+          position: fixed;
+          top: 0;
+          left: 0;
+          z-index: 200;
+          width: 200px;
+          height: 100vh;
+          padding: 32px 20px;
+          background-color: #fff;
+          transform: translateX(-200px);
+          transform: ;
+        }
+      
+        .side-menu-item a {
+          display: block;
+          padding: 10px;
+          color: #3f4150;
+        }
+      
+        .overlay {
+          position: fixed;
+          /* top,left,bottom,right 좌표를 다 0으로 줄 경우, 
+             네 꼭지점에서 서로 잡아당기기 때문에 쫙 펴져서
+             width : 100%, height: 100%와 동일한 효과를 줄 수 있다.
+          */
+          top: 0;
+          left: 0;
+          /* bottom: 0;
+          right: 0; */
+          z-index: 100;
+          width: 100%;
+          height: 100%;
+          /* display : none transition이 먹지 않는다. */
+          /* UI Animation 효과를 주고 싶다면 visibility를 사용! */
+          visibility: hidden;
+          opacity: 0;
+          transition: all 350ms ease-in-out;
+          background-color: rgba(63, 65, 80, 0.5);
+        }
+     
+    }   .overlay.is-active{
+        visibility: visible;
+        opacity: 1;
+
+    }
+  }
+    
+      
+    
         
 
         
         
           
       
-     .mac-info-list{
-      text-align: right;
-     }
-     .mac-icon-list{
-      width: 100%;
-      display: flex;
-      justify-content: center;
-      margin-top: 20px;
-
-     }
-
-    .sidebar {
-     position: fixed; 
-     top: 0;
-     left: 0;
-     z-index: 200;
-     width: 200px;
-     height: 100vh;
-     background-color: #fff;
-     transform: translateX(-200px);
-     padding: 32px 20px;
-    }
-    .side-menu-itme a {
-      padding: 10px;
-      display: block;
-      color: #000;
-    }
-    .overlay{
-      position: fixed;
-      top: 0;
-      left: 0;
-     /* bottom: 0;
-      right: 0;*/
-      z-index: 100;
-      width: 100%;
-      height: 100%;
-      background-color: #333;}
-      visibility: hidden;  }
-      /*display:none,transition이 먹히지 않는다.
-      그래서 uI animation효과를 주고 싶다면 vsiibility*/
-     /*top,left,bottom,right 좌표를 다 0으로 줄 경우
-     네 꼭지점에서 서로 잡아당기기 때문에 */
-} 
-
-  
-
+     
     
     
  
