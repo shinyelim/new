@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+</head>
+<body>
+ <div class="wrapper">
+  <h1 id="cat blue">cat</h1>
+  <button id="btn" type="buttom">클릭,클릭</button>
+
+ </div> 
+ <script>
+ // document.getElementById('cat blue').innerHTML='cat'
+ // document.getElementById('cat blue').style.color='yellow'
+//function change(){
+ // document.getElementById('cat,blue').innerHTML='클릭,클릭'
+ // document.getElementById('cat,blue').style.color='pink'
+ // document.getElementById('btn').addEventListener('클릭, change')
+//}
+const cat=document.getElementById('cat blue');
+const btn=document.getElementById('btn');
+document.getElementById('btn').addEventListener('click',function(){
+cat.innerHTML='러시안블루캣' ;
+cat.style.color='yellow' ;
+})
+//콜백 함수/전역변수/지역변수
+//전역변수:다른 함수에서도 변수 사용됨
+//지역변수:다른함수에서 변수사용못함
+ </script>
+</body>
+</html>
