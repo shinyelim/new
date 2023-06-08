@@ -4,13 +4,13 @@ const gnbIconbtn=document.querySelector('.gnb-icon-btn');
 //const gnbconbtn=document.getElementsByClassName(클래스명)
 //const gnbconbtn=document.getElementById(id명)
 console.log(gnbIconbtn);
-const gnbIconbtn=document.querySelector('.gnb-icon-btn')
+const gnbconbtn=document.querySelector('.gnb-icon-btn')
 const sidebar =document.querySelector('.sidebar ');
 const sidebarOverlay=document.querySelector('.overlay')
-function 함수명(){
+//function 함수명(){
 
-}
-function openSidebar(){
+
+//function openSidebar(){
   //우리가 하고 싶은 내용
   //1.gnbIconbtn 클릭 했을때 sidebar,sidebarOverlay한테 is-active 클래스
   //DoM 메소드를 이용해서 쉽게 클래스를 추가 및 제거 할 수 있다.
@@ -18,17 +18,30 @@ function openSidebar(){
   //그 요소를 쉽게 조작하는 역할을 한다//
   //현재 웹 브라우저에서 DOM을 조작하는 언어는 자바스크립트가 유일함//
   //DOM는 데이터 타입(메소드,프로퍼티,이벤트 리스너,스타일 등)
-  sidebar.classList.add('is-active')
-  sidebarOverlay.classList.add('is-active');
+ // sidebar.classList.add('is-active')
+ // sidebarOverlay.classList.add('is-active');
 
   //내가 gnbIconbtn한테 이벤트를 하나 추가할건데, click이벤트를 추가하고
   // 개를 클릭했을때  openSidebar이 함수를 실행시켜라
-gnbIconbtn.addEventListener('click',openSidebar);
+//gnbIconbtn.addEventListener('click',openSidebar);
 
-function closesidebar(){
+//function closesidebar(){
  
- sidebar.classList.remove('is-active');
- sidebarOverlay.classList.remove('is-active'); 
+ //sidebar.classList.remove('is-active');
+ //sidebarOverlay.classList.remove('is-active'); 
 }
-sidebarOverlay.addEventListener('click',closesidebar)
+//sidebarOverlay.addEventListener('click',closesidebar)
+}//
+//콜백함수:함수를 활용하는 하나의 방식
+//변수의 유효범위(scope),동기/비동기처리
+//코드가 작성된 순서대로 동작(가독성이좋음,재사용성도 좋음)
+//함수를 호출하는 시점이나, 코드가 동작하는 순서가 바뀐다.
+gnbIconbtn.addEventListener(click,function(){
+  //실행 할 코드
+  sidebar.classList.add('is-active');
+  sidebarOverlay.classList.add('is-active');
+})
+sidebarOverlay.addEventListener(click,function()){
+  sidebar.classList.remove('is-active');
+  sidebarOverlay.classList.remove('is-active');
 }
